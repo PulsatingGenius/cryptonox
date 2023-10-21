@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Web3 Extension</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Define the popup dimensions */
+      body {
+        width: 300px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card2">
+        <div class="form">
+          <p id="heading">Cryptonox </p>
+
+          <div class="field-divider"></div>
+          
+          <div class="field">
+            <svg
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              height="16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="input-icon"
+            >
+              <path
+                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+              ></path>
+            </svg>
+            <input
+              type="number"
+              class="input-field"
+              placeholder="amount"
+              id="amount"
+            />
+          </div>
+          <div class="field">
+            <svg style="color: rgb(0, 255, 23);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16"> <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="#00ff17">
+
+            </path> 
+            </svg>
+
+            <textarea
+              type="text"
+              class="input-field"
+              placeholder="Private Key"
+              autocomplete="off"
+              id="private_key"
+              name=""
+              id=""
+              cols="10"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="field">
+            <svg style="color: rgb(21, 255, 0);" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2 12H5H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="#15ff00"></path> <path d="M6.25 6L6.49485 5.72018C7.29167 4.80952 8.70833 4.80952 9.50515 5.72017L13.8476 10.683C14.5074 11.437 14.5074 12.563 13.8476 13.317L9.50515 18.2798C8.70833 19.1905 7.29167 19.1905 6.49485 18.2798L6.25 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="#15ff00"></path> <path d="M13 19L17.8844 13.3016C18.5263 12.5526 18.5263 11.4474 17.8844 10.6984L13 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="#15ff00"></path> <path d="M17 19L21.8844 13.3016C22.5263 12.5526 22.5263 11.4474 21.8844 10.6984L17 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="#15ff00"></path> </svg>
+
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Transfer address"
+              id="address"
+            />
+          </div>
+          <!-- notificatio -->
+          <p class="space"></p>
+          <!-- loader -->
+          <div id="center" class="center">
+            <div class="loader">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <div class="bar4"></div>
+              <div class="bar5"></div>
+              <div class="bar6"></div>
+              <div class="bar7"></div>
+              <div class="bar8"></div>
+              <div class="bar9"></div>
+              <div class="bar10"></div>
+              <div class="bar11"></div>
+              <div class="bar12"></div>
+            </div>
+          </div>
+
+          <small>
+            <a target="_blank" id="link" href="">
+              Check Your Transaction
+            </a></small
+          >
+          <!-- loader -->
+          <div class="btn">
+            <button id="form" class="button1">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transfer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+          </div>
+          <button id="check_blance" class="button3">Check Balance</button>
+        </div>
+      </div>
+    </div>
+    <!-- <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script> -->
+    <script src="./ethers.js"></script>
+    <script src="./popup.js"></script>
+  </body>
+</html>
